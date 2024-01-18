@@ -6,7 +6,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update
 RUN apt upgrade -y
 
-RUN apt install -y git git-lfs cmake build-essential libarchive-tools gcc-arm-none-eabi
+RUN apt install -y git git-lfs cmake build-essential libarchive-tools gcc-arm-none-eabi ffmpeg python3
 
 RUN useradd -ms /bin/bash newuser
 RUN chown newuser /opt
